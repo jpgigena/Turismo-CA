@@ -228,3 +228,120 @@ footer {
     padding: 20px 0;
     margin-top: 40px;
 }
+
+.form-registro,
+.form-login {
+    background-color: white;
+    padding: 3rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 3rem auto;
+    width: 90%;
+}
+
+.form-registro h1,
+.form-login h1 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.form-registro > p,
+.form-login > p {
+    text-align: center;
+    color: #7f8c8d;
+    margin-bottom: 2rem;
+}
+
+.form-auth {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.bloque-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.bloque-form label {
+    font-weight: bold;
+    color: #2c3e50;
+    font-size: 0.95rem;
+}
+
+.bloque-form input[type="text"],
+.bloque-form input[type="email"],
+.bloque-form input[type="tel"],
+.bloque-form input[type="password"] {
+    padding: 0.8rem;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.bloque-form input[type="text"]:focus,
+.bloque-form input[type="email"]:focus,
+.bloque-form input[type="tel"]:focus,
+.bloque-form input[type="password"]:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+.bloque-form.checkbox {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.bloque-form.checkbox input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.bloque-form.checkbox label {
+    margin: 0;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+.btn-auth {
+    background-color: #3498db;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.btn-auth:hover {
+    background-color: #2980b9;
+}
+
+.link-auth {
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+.link-auth a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.link-auth a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
