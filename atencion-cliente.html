@@ -22,3 +22,60 @@
             </ul>
         </nav>
     </header>
+
+    <main>
+        <section class="hero">
+            <h2>¿Necesitas ayuda?</h2>
+            <p>Nuestro equipo de atención al cliente está aquí para ti las 24 horas del día, los 7 días de la semana.</p>
+        </section>
+
+        <section class="faq">
+            <h3>Preguntas Frecuentes</h3>
+            <div class="faq-item">
+                <h4>¿Cómo puedo modificar mi reserva?</h4>
+                <p>Puedes modificar tu reserva desde tu cuenta en línea o llamando a nuestro centro de atención al cliente.</p>
+            </div>
+            <div class="faq-item">
+                <h4>¿Cuál es el número de teléfono de atención al cliente?</h4>
+                <p>El número de atención al cliente es <strong>+549-3467-555555</strong>. Estamos disponibles de lunes a viernes de 9 a 18 hs.</p>
+            </div>
+            <div class="faq-item">
+                <h4>¿Tienen soporte por chat en vivo?</h4>
+                <p>Sí, tenemos soporte por chat en vivo disponible en la esquina inferior derecha de nuestra página web.</p>
+            </div>
+            <div class="faq-item">
+                <h4>¿Qué hago si no recibí mi confirmación de reserva?</h4>
+                <p>Revisa tu bandeja de spam. Si no la encuentras, contacta a nuestro equipo de atención al cliente con tu nombre y fecha de reserva.</p>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h3>Contáctanos Directamente</h3>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="asunto">Asunto:</label>
+                    <select id="asunto" name="asunto" required>
+                        <option value="">Selecciona un asunto</option>
+                        <option value="reserva">Consulta sobre reserva</option>
+                        <option value="facturacion">Facturación</option>
+                        <option value="soporte">Soporte técnico</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-green">Enviar Mensaje</button>
+            </form>
+        </section>
+
+    </main>
