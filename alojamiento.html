@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alojamiento - Turismo-CA</title>
+    <link rel="stylesheet" href="style.css">
+     <style>
+        /* Estilos específicos para la página de alojamiento */
+        .hero-alojamiento {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero-alojamiento h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-alojamiento p {
+            font-size: 1.2rem;
+            max-width: 600px;
+        }
+
+        .filtros-alojamiento {
+            padding: 2rem;
+            background-color: #f8f9fa;
+            margin: 2rem 0;
+        }
+
+        .filtros-form {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            align-items: end;
+        }
+
+        .filtros-form .bloque-form {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .filtros-form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        .filtros-form select,
+        .filtros-form input {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        .filtros-form button {
+            padding: 0.8rem 2rem;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            height: fit-content;
+        }
+
+        .filtros-form button:hover {
+            background-color: #0056b3;
+        }
+
+        .tipos-alojamiento {
+            padding: 2rem;
+        }
+
+        .tipos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .tipo-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .tipo-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .tipo-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .tipo-card-content {
+            padding: 1.5rem;
+        }
+
+        .tipo-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .tipo-card p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .precio-desde {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 1rem;
+        }
+
+        .servicios-lista {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0;
+        }
+
+        .servicios-lista li {
+            padding: 0.3rem 0;
+            color: #666;
+        }
+
+        .servicios-lista li::before {
+            content: "✓";
+            color: #28a745;
+            margin-right: 0.5rem;
+            font-weight: bold;
+        }
+
+        .btn-reservar {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-reservar:hover {
+            background-color: #1e7e34;
+        }
+
+        .info-adicional {
+            background-color: #f8f9fa;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .info-item {
+            text-align: center;
+        }
+
+        .info-item h4 {
+            color: #007bff;
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero-alojamiento h1 {
+                font-size: 2rem;
+            }
+            
+            .filtros-form {
+                flex-direction: column;
+            }
+            
+            .filtros-form .bloque-form {
+                min-width: 100%;
+            }
+        }
+    </style>
+
