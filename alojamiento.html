@@ -365,3 +365,37 @@
     <footer>
         <p>2025 Turismo-CA - Todos los derechos reservados.</p>
     </footer>
+
+
+
+
+     <script>
+        // Funcionalidad básica para los filtros
+        document.querySelector('.filtros-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const ciudad = document.getElementById('ciudad-filtro').value;
+            const tipo = document.getElementById('tipo-filtro').value;
+            const precio = document.getElementById('precio-filtro').value;
+            
+            // Aquí podrías implementar la lógica de filtrado
+            console.log('Filtros aplicados:', { ciudad, tipo, precio });
+            
+            // Mostrar mensaje de ejemplo
+            alert('Filtros aplicados: ' + 
+                  (ciudad ? `Destino: ${ciudad}, ` : '') +
+                  (tipo ? `Tipo: ${tipo}, ` : '') +
+                  (precio ? `Precio máximo: $${precio}` : ''));
+        });
+
+        // Funcionalidad para los botones de reserva
+        document.querySelectorAll('.btn-reservar').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                const tipoAlojamiento = this.closest('.tipo-card').querySelector('h3').textContent;
+                alert(`Redirigiendo a reservas para: ${tipoAlojamiento}`);
+            });
+        });
+    </script>
+</body>
+</html>
