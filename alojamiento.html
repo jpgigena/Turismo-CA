@@ -216,3 +216,146 @@
             </ul>
         </nav>
     </header>
+
+
+
+  <main>
+        <section class="hero-alojamiento">
+            <div>
+                <h1>Encuentra tu Alojamiento Ideal</h1>
+                <p>Desde hoteles de lujo hasta acogedores departamentos, tenemos la opción perfecta para tu estadía</p>
+            </div>
+        </section>
+
+        <section class="filtros-alojamiento">
+            <h2>Busca y filtra alojamientos</h2>
+            <form class="filtros-form">
+                <div class="bloque-form">
+                    <label for="ciudad-filtro">Destino:</label>
+                    <select id="ciudad-filtro" name="ciudad">
+                        <option value="">Todas las ciudades</option>
+                        <option value="bariloche">Bariloche</option>
+                        <option value="mendoza">Mendoza</option>
+                        <option value="cordoba">Córdoba</option>
+                        <option value="salta">Salta</option>
+                    </select>
+                </div>
+                <div class="bloque-form">
+                    <label for="tipo-filtro">Tipo de alojamiento:</label>
+                    <select id="tipo-filtro" name="tipo">
+                        <option value="">Todos los tipos</option>
+                        <option value="hoteles">Hoteles</option>
+                        <option value="departamentos">Departamentos</option>
+                        <option value="resorts">Resorts</option>
+                        <option value="villas">Villas</option>
+                    </select>
+                </div>
+                <div class="bloque-form">
+                    <label for="precio-filtro">Precio máximo:</label>
+                    <select id="precio-filtro" name="precio">
+                        <option value="">Sin límite</option>
+                        <option value="50000">Hasta $50.000</option>
+                        <option value="100000">Hasta $100.000</option>
+                        <option value="150000">Hasta $150.000</option>
+                        <option value="200000">Hasta $200.000</option>
+                    </select>
+                </div>
+                <button type="submit">Buscar</button>
+            </form>
+        </section>
+
+        <section class="tipos-alojamiento">
+            <h2>Tipos de Alojamiento</h2>
+            <div class="tipos-grid">
+                <div class="tipo-card">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Hoteles">
+                    <div class="tipo-card-content">
+                        <h3>Hoteles</h3>
+                        <p>Comodidad y servicio de primera clase. Desde hoteles boutique hasta grandes cadenas hoteleras.</p>
+                        <div class="precio-desde">Desde $80.000/noche</div>
+                        <ul class="servicios-lista">
+                            <li>Servicio de habitaciones</li>
+                            <li>Desayuno incluido</li>
+                            <li>WiFi gratuito</li>
+                            <li>Estacionamiento</li>
+                            <li>Concierge</li>
+                        </ul>
+                        <a href="#" class="btn-reservar">Ver hoteles</a>
+                    </div>
+                </div>
+
+                <div class="tipo-card">
+                    <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Departamentos">
+                    <div class="tipo-card-content">
+                        <h3>Departamentos</h3>
+                        <p>Espacios amplios y cómodos, perfectos para familias o estancias prolongadas.</p>
+                        <div class="precio-desde">Desde $60.000/noche</div>
+                        <ul class="servicios-lista">
+                            <li>Cocina equipada</li>
+                            <li>Sala de estar</li>
+                            <li>Lavandería</li>
+                            <li>Balcón o terraza</li>
+                            <li>Múltiples habitaciones</li>
+                        </ul>
+                        <a href="#" class="btn-reservar">Ver departamentos</a>
+                    </div>
+                </div>
+
+                <div class="tipo-card">
+                    <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Resorts">
+                    <div class="tipo-card-content">
+                        <h3>Resorts</h3>
+                        <p>Experiencia todo incluido con actividades, spa y entretenimiento en un solo lugar.</p>
+                        <div class="precio-desde">Desde $150.000/noche</div>
+                        <ul class="servicios-lista">
+                            <li>Todo incluido</li>
+                            <li>Spa y wellness</li>
+                            <li>Múltiples restaurantes</li>
+                            <li>Actividades recreativas</li>
+                            <li>Piscinas y playa</li>
+                        </ul>
+                        <a href="#" class="btn-reservar">Ver resorts</a>
+                    </div>
+                </div>
+
+                <div class="tipo-card">
+                    <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Villas">
+                    <div class="tipo-card-content">
+                        <h3>Villas</h3>
+                        <p>Privacidad y lujo en propiedades exclusivas, ideales para grupos grandes.</p>
+                        <div class="precio-desde">Desde $200.000/noche</div>
+                        <ul class="servicios-lista">
+                            <li>Propiedad privada</li>
+                            <li>Piscina privada</li>
+                            <li>Jardín y barbacoa</li>
+                            <li>Servicio de limpieza</li>
+                            <li>Chef privado opcional</li>
+                        </ul>
+                        <a href="#" class="btn-reservar">Ver villas</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-adicional">
+            <h2>¿Por qué elegir Turismo-CA?</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <h4>🏆 Calidad Garantizada</h4>
+                    <p>Todos nuestros alojamientos son seleccionados y verificados por nuestro equipo de expertos</p>
+                </div>
+                <div class="info-item">
+                    <h4>💰 Mejores Precios</h4>
+                    <p>Garantizamos los mejores precios del mercado con nuestra política de igualación de precios</p>
+                </div>
+                <div class="info-item">
+                    <h4>🎯 Atención Personalizada</h4>
+                    <p>Nuestro equipo está disponible 24/7 para ayudarte con cualquier consulta o necesidad</p>
+                </div>
+                <div class="info-item">
+                    <h4>🔒 Reserva Segura</h4>
+                    <p>Todas las transacciones están protegidas con la más alta seguridad y encriptación</p>
+                </div>
+            </div>
+        </section>
+    </main>  
